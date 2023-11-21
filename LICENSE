@@ -1,0 +1,75 @@
+MIT License
+
+Copyright (c) 2021-Present The MAZZTer
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--- End of MIT License
+
+The above license applies to the source code in this repository only. Dependencies have their own licensing restrictions.
+
+This software utilizes the following libraries in compliance with their licenses.
+
+When licenses dicate original source code must be made available, the source code may be retrieved using the links in the following list.
+
+Material Design Icons - https://github.com/google/material-design-icons/tree/master/font
+License - https://github.com/google/material-design-icons/blob/master/LICENSE (Apache 2.0)
+Use - Various UI glyphs
+
+CSharpSynthForUnity - https://github.com/kewlniss/CSharpSynthForUnity
+License - https://github.com/kewlniss/CSharpSynthForUnity/blob/master/LICENSE (MIT)
+Use - To play GMID and MID files.
+
+Fixes were cherry picked from GitHub Issues for CSharpSynthForUnity (namely issues relating to locales which don't use . as the decimal character). I also made small modifications of my own so I could send some different data structures into CSharpSynth in a more efficient manner.
+
+I also implemented audio playback in a completely different way for WebAssembly since it does not support the method CSharpSynthForUnity recommends.
+
+zlib.net - https://github.com/JoshDullen/zlib.net
+License - https://github.com/JoshDullen/zlib.net/blob/master/License.txt
+Use - Dependency for libpng
+
+libpng.net - https://github.com/JoshDullen/libpng.net
+License - https://github.com/JoshDullen/libpng.net/blob/master/License.txt
+Use - Read/write palettized and RGB(A) PNG images.
+
+The above two projects were modified to build for .NET Standard through use of new .csproj files. No code changes have been made.
+
+ImageSharp - https://github.com/SixLabors/ImageSharp/tree/v2.1.6
+ImageSharp.Fonts - https://github.com/SixLabors/Fonts/tree/v1.0.1
+ImageSharp.Drawing - https://github.com/SixLabors/ImageSharp.Drawing/tree/v1.0.0
+License - https://github.com/SixLabors/ImageSharp/blob/v2.1.6/LICENSE (Apache 2.0)
+Use - Dynamic image/texture generation.
+
+The newest version of ImageSharp is not compatible with Mono. I am using the previous major versions of the ImageSharp libraries. Note that this older version is not licensed under the Six Labors Split License.
+
+SharpZipLib - https://github.com/icsharpcode/SharpZipLib
+License - https://github.com/icsharpcode/SharpZipLib/blob/master/LICENSE.txt (MIT)
+Use - In WebGL builds to package multiple files at once for download.
+
+Sample code for line intersections - https://github.com/Habrador/Computational-geometry
+License - MIT
+Use - Breaking down Dark Forces sectors into non-overlapping triangles that can be used to generate meshes.
+
+Angular - https://github.com/angular/angular
+License - https://github.com/angular/angular/blob/main/LICENSE (MIT)
+Use - Generating the WebAssembly template
+
+Angular Material - https://github.com/angular/components
+License - https://github.com/angular/components/blob/main/LICENSE (MIT)
+Use - Visual styling for WebAssembly template
