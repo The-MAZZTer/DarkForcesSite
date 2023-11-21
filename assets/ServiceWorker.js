@@ -1,9 +1,9 @@
-const cacheName = "MZZT-Dark Forces Showcase-1.0.0";
+const cacheName = "MZZT-Dark Forces Showcase-1.1.0";
 const contentToCache = [
 	"../Build/WebAssembly.loader.js",
-	"../Build/build.framework.js",
-	"../Build/webgl.data",
-	"../Build/build.wasm",
+	"../Build/WebAssembly.framework.js",
+	"../Build/WebAssembly.data",
+	"../Build/WebAssembly.wasm",
 	"../main.484b3dc897195c77.js",
 	"../styles.8ca4312f8466b334.css",
 	"../polyfills.f54e0bab386c5fb9.js",
