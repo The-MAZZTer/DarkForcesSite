@@ -1,4 +1,4 @@
-const cacheName = "MZZT-Dark Forces Showcase-1.1.3";
+const cacheName = "MZZT-Dark Forces Showcase-1.1.3.8";
 const contentToCache = [
 	"../Build/WebAssembly.loader.js",
 	"../Build/WebAssembly.framework.js",
